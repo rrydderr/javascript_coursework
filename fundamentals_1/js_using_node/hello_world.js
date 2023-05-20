@@ -72,4 +72,32 @@ if (population > 33000000){
     console.log(`${country}'s population is ${averagePopulation - population} below average`);
 }
 
-//Type conversion and coersion
+//Type conversion and coercion
+//2. outcomes:
+console.log('9' - '5'); //4
+console.log('19' - '13' + '17'); //'617'
+console.log('19' - '13' + 17); //23
+console.log('123' > 57); // true
+console.log(5 + 6 + '4' + 9 - 4 - 2); //1143 == here the 2 calculated integers are sparated by the string number in the middle.
+
+const { log } = require('console');
+const { stdout } = require('process');
+
+
+
+//Equality Operators : == vs ===
+// let numNeighbours = prompt('How many neighbour countries does your country have?');
+
+//import statement for promptsync as we are not able to use prompt() in terminal (webpage only)
+const prompt = require('prompt-sync')();
+
+const numNeighbours = prompt('How many neighbour countries does your country have? ');
+
+if (numNeighbours === '1') {
+  console.log('Only 1 border');
+} else {
+  console.log('More than 1 border');
+}
+
+
+

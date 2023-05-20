@@ -86,20 +86,35 @@ const { stdout } = require('process');
 
 
 //Equality Operators : == vs ===
-// let numNeighbours = prompt('How many neighbour countries does your country have?');
 
-//import statement for promptsync as we are not able to use prompt() in terminal (webpage only)
+// //import statement for promptsync as we are not able to use prompt() in terminal (webpage only)
+// const prompt = require('prompt-sync')();
+
+// const numNeighbours = prompt('How many neighbour countries does your country have? ');
+
+// if (Number(numNeighbours) === 1) {
+//   console.log('Only 1 border');
+// } else if (numNeighbours > 1) {
+//   console.log('More than 1 border');
+// } else {
+//     console.log('No borders');
+// }
+
+
+
+//Logical Operators
+
 const prompt = require('prompt-sync')();
 
-const numNeighbours = prompt('How many neighbour countries does your country have? ');
+const country1 = prompt("What is the name of your country? ")
+const language1 = prompt('What langues is spoken most in this country? ');
+const population1 = prompt('What is the population of this country? ')
+const isIsland1 = prompt('is this country and island? ')
 
-if (Number(numNeighbours) === 1) {
-  console.log('Only 1 border');
-} else if (numNeighbours > 1) {
-  console.log('More than 1 border');
+if (population1 < 50000000 && language1 === "english" && isIsland1 === 'no' ){
+    console.log(`You should live in ${country1}`);
 } else {
-    console.log('No borders');
+    console.log(`${country1} does not meet your criteria.`);
 }
-
 
 

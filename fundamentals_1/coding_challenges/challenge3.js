@@ -19,7 +19,6 @@ if (dolphinsAvgScore > koalasAvgScore) {
 }
 
 //2. if the either teams' average score is higher than the others average score, print:
-
 if (dolphinsAvgScore > 100 && koalasAvgScore > 100 && dolphinsAvgScore > koalasAvgScore ){
     console.log("The Dolphins have a higher average score than the Koalas.");
 } else if (dolphinsAvgScore > 100 && koalasAvgScore > 100 && koalasAvgScore > dolphinsAvgScore){
@@ -33,7 +32,6 @@ if (dolphinsAvgScore > 100 && koalasAvgScore > 100 && dolphinsAvgScore > koalasA
 }
 
 //3. if the scores are equal, print "The teams are equal."
-
 if (dolphinsAvgScore > 100 && koalasAvgScore > 100 && dolphinsAvgScore > koalasAvgScore ){
     console.log("The Dolphins have a higher average score than the Koalas.");
 } else if (dolphinsAvgScore > 100 && koalasAvgScore > 100 && koalasAvgScore > dolphinsAvgScore){

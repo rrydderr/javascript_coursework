@@ -117,4 +117,7 @@ if (population1 < 50000000 && language1 === "english" && isIsland1 === 'no' ){
     console.log(`${country1} does not meet your criteria.`);
 }
 
+//the switch statement
+
+
 

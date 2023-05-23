@@ -80,6 +80,7 @@ console.log('19' - '13' + 17); //23
 console.log('123' > 57); // true
 console.log(5 + 6 + '4' + 9 - 4 - 2); //1143 == here the 2 calculated integers are sparated by the string number in the middle.
 
+const { AsyncLocalStorage } = require('async_hooks');
 const { log } = require('console');
 const { stdout } = require('process');
 
@@ -141,5 +142,19 @@ switch (mostCommonLanguage) {
         console.log("Great language too!");
 
 }
+
+//the conditional (ternary) operator
+
+//ATTEMPT 1
+const countryTernary = "England";
+const countryPopulation = 22;
+
+// const ternaryAvgPopulation = (countryPopulation > 33000000 ? console.log(`${countryTernary}'s population is above average`) : console.log(`${countryTernary}'s population is below average`));
+
+// console.log(ternaryAvgPopulation);
+
+
+//ATTEMPT 2
+console.log(`${countryTernary}'s population is ${countryPopulation > 33 ? 'above' : 'below'} average`);
 
 

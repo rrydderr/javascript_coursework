@@ -117,7 +117,29 @@ if (population1 < 50000000 && language1 === "english" && isIsland1 === 'no' ){
     console.log(`${country1} does not meet your criteria.`);
 }
 
-//the switch statement
+//the switch statement ((switch, case '':, break and default))
+let mostCommonLanguage = 'english';
 
+switch (mostCommonLanguage) {
+    case 'chinese':
+    case 'mandarin':
+        console.log("MOST number of native speakers.");
+    break;
+    case 'spanish':
+        console.log("2nd place in number of native speakers.");
+    break;
+    case 'english':
+        console.log("3rd place in number of native speakers.");
+    break;
+    case 'hindi':
+        console.log("4th place in number of native speakers.");
+    break;
+    case 'arabic':
+        console.log("5th place in number of native speakers");
+    break;
+    default:
+        console.log("Great language too!");
+
+}
 
 

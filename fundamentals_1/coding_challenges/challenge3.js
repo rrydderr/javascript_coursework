@@ -45,3 +45,23 @@ if (dolphinsAvgScore > 100 && koalasAvgScore > 100 && dolphinsAvgScore > koalasA
 } else {
     console.log("Neither team has met the requirements for an average score.");
 }
+
+
+//coding challenge 3.5 from switch statement video (make a switch into an if)
+
+const day = "monday";
+
+if (day === "monday"){
+    console.log("Plan course structure");
+    console.log("Go to coding meetup.");
+} else if (day === "tuesday"){
+    console.log("Plan presentation");
+} else if (day === "wednesday" || day === "thursday") {
+    console.log("Write code examples");
+} else if (day === "friday"){
+    console.log("Record videos");
+} else if (day === "saturday" || day ==="sunday"){
+    console.log("Enjoy the weekend :D");
+} else {
+    console.log("Not a valid day!");
+}
